@@ -1,10 +1,17 @@
 class Product:
-    def __init__(self, Name, ImageURL, Price, Description, Calories):
+    def __init__(self, Name, ImageURL, Price, Description, Calories, Option):
         self._Name = Name
         self._ImageURL = ImageURL
         self._Price = Price
         self._Description = Description
         self._Calories = Calories
+        self._Option = []                   #from Option_Product class
+
+
+class Option_Product:
+    def __init__(self, Name, ImageURL):
+        self._Name = Name
+        self._ImageURL = ImageURL
 
 
 class Cart_Item:
@@ -30,11 +37,13 @@ class Admin:
     def __init__(self, Id, Name ,Email, Product):
         self._Id = Id
         self._Name = Name
-        self._Email = Email
-        self._Product = Product
+        self._Email = Email        
 
 
 class Categiry_Menu:
-    def __init__(self, Name_category, Image_Category):
+    def __init__(self, Name_category, Image_Category,Product):
         self._Name_category = Name_category
         self._Image_Category = Image_Category
+        self._Product = []
+
+
