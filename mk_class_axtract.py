@@ -68,7 +68,7 @@ class Order:
         self._Shipping_Address = Shipping_Address
         self._Total_Cost = Total_Cost
         self._Status = Status
-        self._Payment_Status = Payment_Status
+        self._Payment_Status = Payment_Status           #from clss payment
 
 
 class Payment:
