@@ -24,3 +24,17 @@ class Cart:
         self._Quantity = Quantity
         self._Discount = Discount
         self._Price = Price
+
+
+class Admin:
+    def __init__(self, Id, Name ,Email, Product):
+        self._Id = Id
+        self._Name = Name
+        self._Email = Email
+        self._Product = Product
+
+
+class Categiry_Menu:
+    def __init__(self, Name_category, Image_Category):
+        self._Name_category = Name_category
+        self._Image_Category = Image_Category
